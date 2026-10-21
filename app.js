@@ -21,7 +21,7 @@ window.addEventListener('resize', fitHeroTitle);
   if (!box || !box.showModal) return;
   const img = box.querySelector('img');
   document.querySelectorAll('[data-lightbox]').forEach(link => link.addEventListener('click', e => {
-    e.preventDefault(); img.src = link.href; img.alt = link.querySelector('img').alt; box.showModal();
+    e.preventDefault(); img.src = link.href; img.alt = link.dataset.alt || (link.querySelector('img') || {}).alt || ''; box.showModal();
   }));
   box.addEventListener('click', e => { if (e.target === box || e.target.closest('.lightbox-close')) box.close(); });
 })();
