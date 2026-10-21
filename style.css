@@ -39,3 +39,6 @@ html:lang(en) .hero .hero-copy h1{font-size:clamp(21px,6.8vw,104px)}
 .rc-note{font-size:12px;color:var(--muted);font-style:italic;margin:-8px 0 12px}
 .rc-orig{position:relative;display:inline-flex;align-items:center;min-height:44px;margin-top:10px;font-size:13px;color:var(--gold);border-bottom:1px solid #98733160}
 @media(max-width:600px){.review-card-art{padding:44px 24px 26px;border-radius:16px}.review-card-art blockquote{font-size:19px;line-height:1.6}.rc-branch{width:86px;height:86px}.rc-quote{font-size:110px;right:16px}.rc-head strong{font-size:22px}}
+.pi{white-space:nowrap}.price strong,.price span{white-space:nowrap}
+@media(max-width:600px){.price-mini .pi{display:block}.price-mini .psep{display:none}}
+.price-mini .pi,.price-mini .psep{font:inherit;color:inherit}
